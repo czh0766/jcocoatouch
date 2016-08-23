@@ -3,8 +3,8 @@ Develop Android Apps with iOS API ! The library includes **foundation**, **ui** 
 
 # Usage
 - Import the jcocoatouch aar package to your project in Android Studio.
-- Change the theme of application to be @style/Theme.AppCompat.NoActionBar in the AndroidManifest.xml.
-- Let your main activity inherit from CocoaTouchActivity, and invoke UIApplicationMain method when activity created.
+- Change the theme of application to be **@style/Theme.AppCompat.NoActionBar** in the AndroidManifest.xml.
+- Let your main activity inherit from **CocoaTouchActivity**, and invoke **UIApplicationMain** method when activity created.
 ```java
 public class MainActivity extends CocoaTouchActivity {
 
@@ -16,7 +16,7 @@ public class MainActivity extends CocoaTouchActivity {
 
 }
 ```
-- Create a app delegate that inherit from UIApplicationDelegate. Now you can use the iOS API to write your android app !
+- Create a app delegate that inherit from **UIApplicationDelegate**. Now you can use the iOS API to write your android app !
 ```java
 public class AppDelegate extends NSObject implements UIApplicationDelegate {
 
