@@ -36,6 +36,38 @@ public class AppDelegate extends NSObject implements UIApplicationDelegate {
     ...
 }
 ```
+# Custom View
+- You can just create your own view that inherit form **UIView**, and override **drawRect** method.
+```java
+public class CustomView extends UIView {
+
+    @Override
+    public void drawRect(Canvas canvas) {
+        //todo
+    }
+    
+}
+```
+- If you want to use Android native view, you should overrid **layerClass** method, and create the layer that inherit form **CocoaTouchView**.
+```java
+public class CustomView extends UIView {
+
+    @Override
+    public Class<? extends CocoaTouchView> layerClass() {
+        return CustomViewLayer.class;
+    }
+
+    private static class CustomViewLayer extends CocoaTouchView {
+
+        public CustomViewLayer(Context context) {
+            super(context);
+            //add the Android native view
+        }
+        
+    }
+
+}
+```
 
 # History
 We have migrated MindLine(https://itunes.apple.com/us/app/mindline/id1025462912?mt=8), the popular iOS app to the Android platform based on jcocoatouch. You can download it on http://fir.im/968p or other Android markets.
