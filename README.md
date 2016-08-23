@@ -41,4 +41,4 @@ public class AppDelegate extends NSObject implements UIApplicationDelegate {
 We have migrated MindLine(https://itunes.apple.com/us/app/mindline/id1025462912?mt=8), the popular iOS app to the Android platform based on jcocoatouch. You can download it on http://fir.im/968p or other Android markets.
 
 # Contact
-If any question or suggestion, please contact us with e-mail czh0766@163.com, or QQ 452527750, thanks!
+If any question or suggestion, please contact us with e-mail czh0766@163.com, or QQ 452527750. Thanks!
