@@ -68,6 +68,28 @@ public class CustomView extends UIView {
 
 }
 ```
+# Proguard
+jcocoatouch uses some reflection functions, so you should specific keep options for it when proguard your app.
+```java
+-keep public class apple.cocoatouch.**{
+    public *;
+}
+
+-keepclassmembers class * {
+    void *(apple.cocoatouch.foundation.NSSender);
+    void *(apple.cocoatouch.foundation.NSNotification);
+    void *(apple.cocoatouch.ui.UIGestureRecognizer);
+    void *(apple.cocoatouch.ui.UIMenuItem);
+}
+
+-keepclassmembers class * extends apple.cocoatouch.ui.CocoaTouchView {
+    public <init>(android.content.Context);
+}
+
+-keep class * implements apple.cocoatouch.foundation.NSCoding {
+
+}
+```
 
 # History
 We have migrated MindLine(https://itunes.apple.com/us/app/mindline/id1025462912?mt=8), the popular iOS app to the Android platform based on jcocoatouch. You can download it on http://fir.im/968p or other Android markets.
