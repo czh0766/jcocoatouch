@@ -98,11 +98,11 @@ We have migrated MindLine(https://itunes.apple.com/us/app/mindline/id1025462912?
 If any question or suggestion, please contact us with e-mail czh0766@163.com, or QQ 452527750. Thanks!
 
 # Updates
-- 0.9.1 (2016.09.13)
+- **0.9.1** (2016.09.13)
     - Supports nib file loading to build complex views.
-    - The ScrollView could be decelerated and zoomed in or out.
-    - The NSObject supports setValueForKey and valueForKey methods. 
-    - The UIView adds multipleTouchEnabled and userData properties.
-    - The UIImage implements NSCoding.
+    - The **ScrollView** could be decelerated and zoomed in or out.
+    - The **NSObject** supports **setValueForKey** and **valueForKey** methods. 
+    - The **UIView** adds **multipleTouchEnabled** and **userData** properties.
+    - The **UIImage** implements **NSCoding**.
     - The selector methods should be kept public and not proguard.
     
