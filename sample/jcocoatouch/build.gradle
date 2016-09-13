@@ -1,2 +1,2 @@
 configurations.maybeCreate("default")
-artifacts.add("default", file('jcocoatouch-0.9.0.aar'))
+artifacts.add("default", file('jcocoatouch-0.9.1.aar'))

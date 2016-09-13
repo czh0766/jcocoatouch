@@ -25,7 +25,6 @@ public class AppDelegate extends NSObject implements UIApplicationDelegate {
         UIWindow window = new UIWindow(bounds);
         window.makeKeyAndVisible();
 
-
         UIViewController root = new RootViewController();
         UINavigationController navi = new UINavigationController(root);
 

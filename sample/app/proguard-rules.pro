@@ -15,3 +15,23 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+
+-keep public class apple.cocoatouch.**{
+    public *;
+}
+
+-keepclassmembers class * {
+    void *(apple.cocoatouch.foundation.NSSender);
+    void *(apple.cocoatouch.foundation.NSNotification);
+    void *(apple.cocoatouch.ui.UIGestureRecognizer);
+    void *(apple.cocoatouch.ui.UIMenuItem);
+}
+
+-keepclassmembers class * extends apple.cocoatouch.ui.CocoaTouchView {
+    public <init>(android.content.Context);
+}
+
+-keep class * implements apple.cocoatouch.foundation.NSCoding {
+
+}
