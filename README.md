@@ -102,7 +102,7 @@ If any question or suggestion, please contact us with e-mail czh0766@163.com, or
     - Supports nib file loading to build complex views.
     - The ScrollView could be decelerated and zoomed in or out.
     - The NSObject supports setValueForKey and valueForKey methods. 
-    - The selector methods should be kept public and not proguard.
     - The UIView adds multipleTouchEnabled and userData properties.
     - The UIImage implements NSCoding.
+    - The selector methods should be kept public and not proguard.
     
