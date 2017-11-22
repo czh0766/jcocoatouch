@@ -99,7 +99,7 @@ If any question or suggestion, please contact us with e-mail czh0766@163.com, or
 
 # Updates
 - **0.9.2** (2017.11.22)
-    It's long time to update with many improvements and bug fixes.
+    - It's long time to update with many improvements and bug fixes.
     
 - **0.9.1** (2016.09.13)
     - Supports nib file loading to build complex views.
